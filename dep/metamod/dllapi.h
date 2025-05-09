@@ -5,7 +5,7 @@
 #ifndef DLLEXPORT
 	#ifdef _WIN32
 		#define DLLEXPORT	__declspec(dllexport)
-		// WINAPI should be provided in the windows compiler headers.
+		// WINAPI should be provided in the windows compiler headers
 		// It's usually defined to something like "__stdcall".
 	#else
 		#define DLLEXPORT	__attribute__((visibility("default")))
